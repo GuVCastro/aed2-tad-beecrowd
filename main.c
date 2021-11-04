@@ -115,9 +115,13 @@ int main(void)
 	int cont, tipo, dado, tmp, i;
 	Fila fila, fPrioridade;
 	Pilha pilha;
+	bool isFila, isPilha, isFilaPrioridade;
+	
 	
 	while(scanf("%d", &cont) != EOF) {
-		bool isFila = true, isPilha = true, isFilaPrioridade = true;
+		isFila = true;
+		isPilha = true;
+		isFilaPrioridade = true;
 		
 		newFila(&fila);
 		newPilha(&pilha);
